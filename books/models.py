@@ -14,4 +14,5 @@ class Book(models.Model):
     publication_year = models.IntegerField()
     available = models.BooleanField(default=True)
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    cover_image = models.ImageField(upload_to='book_covers/', blank=True, null=True)
     def __str__(self): return self.title

@@ -1,18 +1,8 @@
-# Python compiled files
+node_modules/
 __pycache__/
-*.py[cod]
-
-# Virtual environments
-venv/
-myvenv/
-env/
-.venv/
-
-# Local database (optional: skip if submitting project data)
-*.sqlite3
-
-# Environment variables & secrets
+*.pyc
 .env
-
-# VS Code directory settings
-.vscode/
+.venv/
+db.sqlite3
+media/
+staticfiles/
