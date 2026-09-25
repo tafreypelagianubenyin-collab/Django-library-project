@@ -2,26 +2,18 @@
   "name": "django-phase-4",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch",
+    "build": "tailwindcss -i ./static/src/input.css -o ./static/src/output.css --minify"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tafreypelagianubenyin-collab/Django-library-project.git"
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwind-animate": "^0.2.10",
+    "tailwindcss": "^4.2.1",
+    "tailwindcss-animate": "^1.0.7"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/tafreypelagianubenyin-collab/Django-library-project/issues"
-  },
-  "homepage": "https://github.com/tafreypelagianubenyin-collab/Django-library-project#readme",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.3.3",
-    "autoprefixer": "^10.6.1",
-    "postcss": "^8.5.28",
-    "tailwindcss": "^4.3.3"
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2"
   }
 }
